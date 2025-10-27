@@ -22,7 +22,6 @@ main{
 	
 }
 
-
 /* Styles for the header */
 header{
 	
@@ -35,6 +34,7 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid #ddd;
+	font-size: 90%;
 }
 
 header img{
@@ -103,7 +103,7 @@ article {
 	width: 54.0404%;
 	float: left;
 	margin-left: 2.0202%;
-	padding: 1.5em 2.52525% 0 0;
+	padding: 0 2.52525% 0 0;
 	min-height: 100%;
 }
 
@@ -203,4 +203,115 @@ footer .Social {
 
 .LinkedIn:hover {
   background-color: #0056b3;
+}
+
+
+.responsive-form {
+	width: 54.0404%;
+	float: left;
+	margin-left: 2.0202%;
+	padding: 0 2.52525% 0 0;
+	min-height: 100%;
+}
+
+form{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	min-height: 100%;
+	
+}
+fieldset{
+	width: 90%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-top: .5em;
+	border: 2px solid var(--global-color-1);
+	min-height: 100%;
+}
+
+legend{
+	color: var(--global-color-1);
+	font-weight: bold;
+	font-size:85%;
+	margin-bottom: .5em;
+	
+}
+
+label, input, select{
+	font-size: 90%;
+	float: left;
+}
+
+label {
+	min-width: 48%;
+	margin-bottom: .5em;
+
+	text-align: right;
+	
+}
+
+input{
+	width: 40%;
+	margin-left: .5em;
+	margin-bottom:  .5em;
+}
+
+select{
+	width: 40%;
+	margin-left: .5em;
+	margin-bottom:  .5em;
+}
+
+textarea{
+	width: 90%;
+	min-height: 100px;
+	margin-left: .5em;
+	margin-bottom:  .5em;
+}
+
+#button input{
+	width: 10em;
+}
+
+div.gallery-form{
+	width: 54.0404%;
+	float: left;
+	margin-left: 2.0202%;
+	min-height: 100%;
+	
+}
+
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  min-height: 100%;
+  padding: 1.5em 2.52525% 0 0;
+
+
+  
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid var(--global-color-1);
+  width: 180px;
+}
+
+div.gallery-item:hover {
+  border: 5px solid #777;
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+  font-size: 90%;
+  color: var(--global-color-1);
 }

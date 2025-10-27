@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>First American Network</title>
+	<link rel="stylesheet" href="index_main.css">
+	
+</head>
+<body>
+	<header>
+		<img src="FANLogo.png" alt="First American Network">
+		
+		<nav>
+			<ul>
+				<li><a href="index.html"><b>Home</b></a></li>
+				<li><a href="#"><b>Services</b></a></li>
+				<li><a href="#"><b>About Us</b></a></li>
+				<li><a href="Resources.html"><b>Resources</b></a></li>
+				<li><a href="#"><b>Contact Us</b></a></li>
+			</ul>
+		</nav>
+		<a href="#" class="MyAccount">My Account</a>
+	</header>
+	
+	<main>
+		<div class="responsive-form">
+			<form id="Contact_Form">
+				<fieldset>
+					<legend>Send us a Message</legend>
+					
+					<label for="fname">First Name:</label>
+					<br>
+					<input type="text" id="fname" name="fname" placeholder="First Name">
+					<br>
+					
+					
+					<label for="lname">Last Name:</label>
+					<br>
+					<input type="text" id="lname" name="lname" placeholder="Last Name">
+					<br>
+					
+					<label for="phone">Phone Number:</label>
+					<br>
+					<input type="tel" name="phone" id="phone" placeholder="999-999-9999"
+					pattern="\d{3}[\-]\d{3}[\-]d{4}"
+					title="Must be 999-999-999 format">
+					<br>
+					
+					<label for="phone">Account Number:</label>
+					<br>
+					<input type="text" name="account" id="account" placeholder="999-99-9999"
+					pattern="\d{3}[\-]\d{2}[\-]d{4}"
+					title="Must be 999-99-99998 format">
+					<br>
+					
+					<label for="message">Message:</label>
+					<br>
+					<textarea id="message" name="message" placeholder="Your Message"></textarea>
+					<br><br>
+					
+					<input type="submit" value="Send Message">
+					<br>
+					<input type="reset" value="Reset Form">
+					<br>
+				</fieldset>
+			</form>
+		</div>
+		<aside>
+			<h2> Contact Us </h2>
+			<img src="ContactUs.jpg" alt="Contact Us">
+			<ul>
+				<li><b>Phone: 800-867-5309</b></li>
+				<li><b>Email: support@FirstAM.com</b></li>
+				<li><b>Mail: 123 Business St. Yahoo, CA </b></li>
+			</ul>
+			<br>
+		</aside>
+
+	</main>
+	
+	<footer> 
+		<div class="footer-container">
+			<div class="CopyRight"><p>&copy; Copyright 2025 First American Network.</p></div>
+			<div class="Social">
+				<a href="#" class="FaceBook">Facebook</a>
+				<a href="#" class="LinkedIn">LinkeIn</a>
+			</div>
+		</div>
+
+	</footer>
+</body>
+</html>
