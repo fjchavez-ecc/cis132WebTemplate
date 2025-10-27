@@ -217,8 +217,7 @@ footer .Social {
 form{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-
+	justify-content: left;
 	min-height: 100%;
 	
 }
@@ -236,7 +235,6 @@ legend{
 	font-weight: bold;
 	font-size:85%;
 	margin-bottom: .5em;
-	
 }
 
 label, input, select{
@@ -245,10 +243,9 @@ label, input, select{
 }
 
 label {
-	min-width: 48%;
+	min-width: 25%;
 	margin-bottom: .5em;
-
-	text-align: right;
+	text-align: left;
 	
 }
 
@@ -256,6 +253,7 @@ input{
 	width: 40%;
 	margin-left: .5em;
 	margin-bottom:  .5em;
+	float: left;
 }
 
 select{
@@ -268,7 +266,7 @@ textarea{
 	width: 90%;
 	min-height: 100px;
 	margin-left: .5em;
-	margin-bottom:  .5em;
+	margin-bottom: .5em;
 }
 
 #button input{
@@ -289,9 +287,6 @@ div.gallery {
   justify-content: flex-start;
   min-height: 100%;
   padding: 1.5em 2.52525% 0 0;
-
-
-  
 }
 
 div.gallery-item {
