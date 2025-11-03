@@ -14,62 +14,64 @@
 		<nav>
 			<ul>
 				<li><a href="index.html"><b>Home</b></a></li>
-				<li><a href="#"><b>Services</b></a></li>
-				<li><a href="#"><b>About Us</b></a></li>
+				<li><a href="Services.html"><b>Services</b></a></li>
+				<li><a href="About.html"><b>About Us</b></a></li>
 				<li><a href="Resources.html"><b>Resources</b></a></li>
-				<li><a href="#"><b>Contact Us</b></a></li>
+				<li><a href="ContactUs.html"><b>Contact Us</b></a></li>
 			</ul>
 		</nav>
 		<a href="#" class="MyAccount">My Account</a>
 	</header>
 	
 	<main>
-		<div class="responsive-form">
-			<form id="Contact_Form">
-				<fieldset>
-					<legend>Send us a Message</legend>
-					
-					<label for="fname">First Name:</label>
-					<input type="text" id="fname" name="fname" placeholder="First Name">
-					<br><br>
-					
-					<label for="lname">Last Name:</label>
-					<input type="text" id="lname" name="lname" placeholder="Last Name">
-					<br><br>
-					
-					<label for="phone">Phone Number:</label>
-					<input type="tel" name="phone" id="phone" placeholder="999-999-9999"
-					pattern="\d{3}[\-]\d{3}[\-]d{4}"
-					title="Must be 999-999-999 format">
-					<br><br>
-					
-					<label for="phone">Account Number:</label>
-					<input type="text" name="account" id="account" placeholder="999-99-9999"
-					pattern="\d{3}[\-]\d{2}[\-]d{4}"
-					title="Must be 999-99-99998 format">
-					<br><br>
-					
-					<label for="message">Message:</label>
-					<textarea id="message" name="message" placeholder="Your Message"></textarea>
-					<br><br>
-					
-					<input type="submit" value="Send Message">
-					<input type="reset" value="Reset Form">
-					<br>
-				</fieldset>
-			</form>
-		</div>
-		<aside>
-			<h2> Contact Us </h2>
-			<img src="ContactUs.jpg" alt="Contact Us">
-			<ul>
-				<li><b>Phone: 800-867-5309</b></li>
-				<li><b>Email: support@FirstAM.com</b></li>
-				<li><b>Mail: 123 Business St. Yahoo, CA </b></li>
-			</ul>
-			<br>
-		</aside>
+		<div class="container">
 
+				<div class="responsive-form">
+					<form id="Contact_Form">
+						<fieldset>
+							<legend>Send us a Message</legend>
+							
+							<label for="fname">First Name:</label>
+							<input type="text" id="fname" name="fname" placeholder="First Name">
+							<br><br>
+							
+							<label for="lname">Last Name:</label>
+							<input type="text" id="lname" name="lname" placeholder="Last Name">
+							<br><br>
+							
+							<label for="phone">Phone Number:</label>
+							<input type="tel" name="phone" id="phone" placeholder="999-999-9999"
+							pattern="\d{3}[\-]\d{3}[\-]d{4}"
+							title="Must be 999-999-999 format">
+							<br><br>
+							
+							<label for="phone">Account Number:</label>
+							<input type="text" name="account" id="account" placeholder="999-99-9999"
+							pattern="\d{3}[\-]\d{2}[\-]d{4}"
+							title="Must be 999-99-99998 format">
+							<br><br>
+							
+							<label for="message">Message:</label>
+							<textarea id="message" name="message" placeholder="Your Message"></textarea>
+							<br><br>
+							
+							<input type="submit" value="Send Message">
+							<input type="reset" value="Reset Form">
+							<br>
+						</fieldset>
+					</form>
+				</div>
+				<aside class="sidebar">
+					<h2> Contact Us </h2>
+					<img src="ContactUs.jpg" alt="Contact Us">
+					<ul>
+						<li><b>Phone: 800-867-5309</b></li>
+						<li><b>Email: support@FirstAM.com</b></li>
+						<li><b>Mail: 123 Business St. Yahoo, CA </b></li>
+					</ul>
+					<br>
+				</aside>
+		</div>
 	</main>
 	
 	<footer> 
