@@ -34,7 +34,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid var(--global-color-1);
 	font-size: 90%;
 }
 
@@ -44,7 +44,7 @@ header img{
 	min-width: 175px;
 	float: left;
 	margin-right:2.0202%;
-	border-right: 3px solid var(--global-color-1);
+	border-right: 1px solid var(--global-color-1);
 	padding: 0px;
 }
 
@@ -99,13 +99,27 @@ header ul li a:hover{
 
 
 /*Styles for the Article section*/
+.banner {
+  width:100%;
+  height: 200px; /* Set desired banner height */
+  overflow: hidden;
+  position: relative;
+  
+  background-image: url("RealEstate3.jpg"); /* Replace with your image path */
+  background-size: contain; /* Adjusts the image size to cover the entire element */
+  background-position: center top ; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+  background-color: AliceBlue; 
+  
+}
 
 .container{
 	display: flex;
 	justify-content: space-between;
 	width : 100%;
-
-	height: 100%;
+	margin: 20px 0 0 0;
+	height: 50%;
 	padding: 10px;
 }
 
@@ -119,17 +133,29 @@ header ul li a:hover{
 
 }
 
-.main-content h1{
+.main-content h1,.main-content h2, .main-content h3, .main-content h5, p, li{
 	
 	color: var(--global-color-1);
 	
+}
+
+.main-content .inline-heading {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.semi-bold{
+	font-family: 'Inter', sans-serif;
+	font-weight: 600;
 }
 
 .sidebar{
 	width: 35.35353%;
 	float: left;
 	padding: 2.0202%;
-	margin: 1.5em 2.0202% 0 0;
+	margin: 0 2.0202% 0 0;
 	background-color: #003366;
 	min-height: 100%;
 	box-sizing: border-box;
@@ -140,12 +166,13 @@ header ul li a:hover{
 	max-width: 100%;
 }
 
-.sidebar h2{
+.sidebar h2, .sidebar h3{
 	font-size: 1.625em;
 	color: #fff;
 }
 
-.sidebar ul{
+
+.sidebar li{
 	font-size: 1.0em;
 	color: #fff;
 }
@@ -174,55 +201,28 @@ header ul li a:hover{
 	
 }
 
-/*
-.service-cards {
-	
-	position: relative;
-	display: grid;
-	column-gap: 16px;
-	overflow: auto;
-	padding: 2.0202%;
-	width: 100%;
-	height: 100%;
-	
-	
-	
-	padding-top: 10px;
-	display: grid;
-	justify-content: space-between;
-	width : 100%;
-	overflow: hidden;
-	height: 100%;
-	background-color: AliceBlue;
-	height: 100%;
-	padding: 2.0202%;
-	
+.accordion-button
+{
+	font-size: medium;	
 }
 
-.service-cards .card{
-	width: 33%;
-	height: 100%;
-	grid-row: 1;
-	grid-row-start:1;
-	grid-row-end: auto;
+.accordion-body{
+	color: var(--global-color-1);
 }
-
-
-*/
-
-
-
 
 /* Styles for the footer */
-
 
 footer { 
 
 	position: fixed;
-	width: 96%;
-	background-color: AliceBlue; 
-	border-top: 1px solid #ddd;
-	bottom: 1px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: AliceBlue;
+	padding: 8px;
+	text-align: center;
+	z-indez: 1000;
+	border-top: 1px solid var(--global-color-1);
 	height: 75px;
 }
 
@@ -260,7 +260,8 @@ footer .Social {
 	text-align: right;
 }
 
-.FaceBook {
+footer .SocialMedia {
+  margin: 2px;
   padding: 4px 8px;
   background-color: var(--global-color-1);
   color: #fff;
@@ -270,26 +271,12 @@ footer .Social {
   transition: background-color 0.3s ease;
 }
 
-.FaceBook:hover {
+footer .SocialMedia:hover {
   background-color: #0056b3;
 }
 
-.LinkedIn {
-  padding: 4px 8px;
-  background-color: var(--global-color-1);
-  color: #fff;
-  border-radius: 4px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.LinkedIn:hover {
-  background-color: #0056b3;
-}
-
-
-.responsive-form {
+/*
+footer .responsive-form {
 	width: 75.0404%;
 	float: left;
 	margin-left: 2.0202%;
@@ -297,6 +284,8 @@ footer .Social {
 	min-height: 100%;
 
 }
+
+*/
 
 form{
 	display: flex;
@@ -306,7 +295,7 @@ form{
 	
 }
 fieldset{
-	width: 90%;
+	width: 100%;
 	margin-top: 1em;
 	margin-bottom: 1em;
 	padding-top: .5em;
@@ -327,7 +316,7 @@ label, input, select{
 }
 
 label {
-	min-width: 25%;
+	min-width: 30%;
 	margin-bottom: .5em;
 	text-align: left;
 	
@@ -394,3 +383,4 @@ div.gallery-item div.desc {
   font-size: 90%;
   color: var(--global-color-1);
 }
+
